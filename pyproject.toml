@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "password-generator"
+version = "1.0.0"
+description = "For generating password with python"
+authors = ["Masahiro Kochi <workspace2110@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
