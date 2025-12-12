@@ -1,14 +1,18 @@
-[tool.poetry]
+[project]
 name = "password-generator"
-version = "1.0.0"
-description = "For generating password with python"
-authors = ["Masahiro Kochi <workspace2110@gmail.com>"]
 readme = "README.md"
+description = "For generating password with python"
+version = "1.1.0"
+requires-python = ">=3.14"
+authors = [{name = "Masahiro Koti", email="workspace2110@gmail.com"}]
+license = {text = "MIT"}
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.10"
-
+[project.optional-dependencies]
+dev = [
+    "flake8>=7.3.0",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
